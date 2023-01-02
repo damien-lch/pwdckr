@@ -16,9 +16,9 @@ jobs:
         run: npm install
 
       # Build
-      - name: Compiler
-        uses: icrawl/action-tsc@v1
+      - name: Compile
+        uses: npm run compile
 
       # Tests
       - name: Run the tests
-        run: npm test
+        run: npm run test
