@@ -1,1 +1,0 @@
-export { Pwdckr } from "./pwdckr";
