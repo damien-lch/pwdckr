@@ -15,7 +15,7 @@ export class Pwdckr {
   protected _value: string = "";
   protected _isValid: boolean = false;
   protected _validators: Validators;
-  constructor(validators) {
+  constructor(validators = DEFAULT_VALIDATORS) {
     this._validators = {
       ...this._validators,
       ...processValidators(validators),
@@ -79,7 +79,6 @@ export class Pwdckr {
 }
 
 const processValidators = (validators): Validators => {
-  if (!validators) validators = DEFAULT_VALIDATORS;
   return {
     minLength: {
       isActive: validators?.minLength ? true : false,
