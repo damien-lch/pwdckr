@@ -1,1 +1,1 @@
-export { Pwdckr } from "./pwdckr";
+export { Pwdckr, Validator, Validators } from "./pwdckr";
