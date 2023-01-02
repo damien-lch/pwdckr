@@ -23,10 +23,10 @@ Create a Pwdckr instance with custom validators
 import { Pwdckr } from '@neiwad/pwdckr'
 const pwdckr = new Pwdckr({
     minLength: 10, 
-    hasUpperCase: true
-    hasSpecialChar: true
-    hasLowerCase: false //Don't check pwd for lowercase(s)
-    hasNumber: false //Don't check pwd for number(s)
+    hasUpperCase: true,
+    hasSpecialChar: true,
+    hasLowerCase: false, //Don't check pwd for lowercase(s)
+    hasNumber: false, //Don't check pwd for number(s)
 })
 ```
 
