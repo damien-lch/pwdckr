@@ -1,0 +1,19 @@
+{
+  "name": "@neiwad/pwdckr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "@neiwad",
+  "license": "ISC",
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
