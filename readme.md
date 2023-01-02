@@ -42,3 +42,56 @@ const pwdckr = new Pwdckr({
 | hasLowerCase   | boolean | true    |
 
 *hasSpecialChar note: currently pwdckr doesnt allow custom regex for special characteres checking. The current special char regex is: [!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*
+
+## Methods
+
+Update the value of the password
+
+```ts
+pwdckr.updateValue(value)
+```
+
+## Variables
+
+Global status of pwdckr
+
+```ts
+pwdckr.isValid //return the global status of pwdckr (true | false)
+```
+
+Global status of validators
+
+```ts
+pwdckr.validators //return the status of validators
+```
+
+Example of validators status
+
+```json
+minLength: {
+    "value": 8, //Defined only for minLength and maxLength
+    "isValid": true,
+    "isActive": true
+},
+maxLength: {
+    "value": 8, //Defined only for minLength and maxLength
+    "isValid": true,
+    "isActive": true
+},
+hasNumber: {
+    "isValid": true,
+    "isActive": true
+},
+hasSpecialChar: {
+    "isValid": true,
+    "isActive": true
+},
+hasUpperCase: {
+    "isValid": true,
+    "isActive": true
+},
+hasLowerCase: {
+    "isValid": true,
+    "isActive": true
+}
+```
