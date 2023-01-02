@@ -1,4 +1,4 @@
-const { Pwdckr } = require("../dist/index.js");
+import { Pwdckr } from "../src/pwdckr";
 
 test("Create Pwdckr", () => {
   const pwdckr = new Pwdckr();
