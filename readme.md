@@ -2,6 +2,8 @@
 
 **Pwdckr** is a simple librairy to check password validation.
 
+![demo.gif](https://github.com/neiwad/pwdckr/blob/main/public/demo.gif?raw=true)
+
 ## How to use?
 
 ```bash
