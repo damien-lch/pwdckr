@@ -1,8 +1,7 @@
 name: Jest
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    branches: [main]
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -11,11 +10,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "12"
-      # Install required deps for action
+          node-version: "16"
+      # Install
       - name: Install Dependencies
-        run: npm install
+        run: yarn
 
-      # Finally, run our tests
+      # Build
+      - name: Compile
+        run: yarn compile
+
+      # Tests
       - name: Run the tests
-        run: npm test
+        run: yarn test
