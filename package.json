@@ -4,6 +4,11 @@
   "description": "Pwdckr is a simple librairy to check password validation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neiwad/pwdckr/"
+  },
   "scripts": {
     "test": "jest",
     "compile": "tsc",
