@@ -17,7 +17,7 @@ jobs:
 
       # Build
       - name: Compile
-        uses: npm run compile
+        run: npm run compile
 
       # Tests
       - name: Run the tests
